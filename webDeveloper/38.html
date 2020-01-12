@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Exercise: Register</title>
+</head>
+<body>
+
+<h1>Register</h1>
+
+<!-- action - where the form send data to -->
+<!-- method - what HTTP method (get/post 	) -->
+<form>
+	<!-- Name -->
+	<label for="firstName">First Name:</label>
+	<input name="firstName" id="firstName" type="text" placeholder="John" required>
+	<label for="lastName">Last Name: </label>
+	<input name="lastName" id="lastName" type="text" placeholder="Smith" required>
+	<br>
+
+	<!-- Gender -->
+	<label for="male">Male</label>
+	<input name="genderChoice" id="male" type="radio" value="MALE">
+	<label for="female">Female</label>
+	<input name="genderChoice" id="female" type="radio" value="FEMALE">
+	<label for="other">Other</label>
+	<input name="genderChoice" id="Other" type="radio" value="OTHER">
+	<br>
+	
+	<!-- Email & Password -->
+	<label for="email">Email: </label>
+	<input id="email" type="email" placeholder="your email" required>
+	<label for="password">Password: </label>
+	<input id="password" type="password" placeholder="your password" required minlength="5" maxlength="10">
+	<br>
+
+	<!-- Birthday -->
+	<label for="birthday">Birthday: </label>
+	
+	<select name="months">
+		<option value="">Month</option>
+		<option value="September">S</option>
+		<option value="November">N</option>
+		<option value="December">D</option>	
+	</select>
+	<select name="day">
+		<option value="">Day</option>
+		<option value="Monday">Mon</option>
+		<option value="Tuesday">Tues</option>
+		<option value="Wednesday">Wed</option>	
+	</select>
+	<select name="year">
+		<option value="">Year</option>
+		<option value="1994">1994</option>
+		<option value="2001">2001</option>
+		<option value="2008">2008</option>	
+	</select>
+	<br>
+
+
+	<p>I agree with the Terms and Conditions<input type="checkbox"></p>
+
+	<input type="submit" value="Submit">
+</form>
+
+<a href="30.html">Quiz 3: First Gen Pokemon Chart</a>
+</body>
+</html>
